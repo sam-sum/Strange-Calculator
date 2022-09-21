@@ -29,5 +29,76 @@ class ViewController: UIViewController {
         sender.backgroundColor = UIColor.clear
     }
     
+    @IBAction func btn3UpInside(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.clear
+    }
+    
+    @IBAction func btn4UpInside(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.clear
+    }
+    
+    @IBAction func btn5UpInside(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.clear
+    }
+    
+    @IBAction func btn6UpInside(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.clear
+    }
+    
+    @IBAction func btn7UpInside(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.clear
+    }
+    
+    @IBAction func btn8UpInside(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.clear
+    }
+    
+    @IBAction func btn9UpInside(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.clear
+    }
+    
+    @IBAction func btn0UpInside(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.clear
+    }
+    
+    @IBAction func btnPlusUpInside(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.clear
+    }
+    
+    @IBAction func btnMinusUpInside(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.clear
+    }
+    
+    @IBAction func btnMultiplyUpInside(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.clear
+    }
+    
+    @IBAction func btnDivideUpInside(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.clear
+    }
+    
+    @IBAction func btnDecUpInside(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.clear
+    }
+    
+    @IBAction func btnEqualUpInside(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.clear
+    }
+    
+    @IBAction func btnClearUpInside(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.clear
+    }
+    
+    @IBAction func btnBackUpInside(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.clear
+    }
+    
+    @IBAction func btnPosNegUpInside(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.clear
+    }
+    
+    @IBAction func btnPrecentUpInside(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.clear
+    }
 }
 
