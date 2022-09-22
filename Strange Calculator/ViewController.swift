@@ -1,14 +1,23 @@
 //
-//  ViewController.swift
-//  Strange Calculator
+//  MAPD714 F22
+//  Milestone 1
+//  Group 8
+//  Member: Suen, Chun Fung (Alan) 301277969
+//          Sum, Chi Hung (Samuel) 300858503
+//          Wong, Po Lam (Lizolet) 301258847
+//  Date:   Sep 21, 2022
 //
-//  Created by Samuel Sum on 2022-09-19.
+//  ViewController.swift
+//  Strange Calculator - A simple calculator with a strange key layout
+//  Version 0.1
 //
 
 import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var resultLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -21,84 +30,28 @@ class ViewController: UIViewController {
         sender.backgroundColor = UIColor.clear
     }
     
-    @IBAction func btn1UpInside(_ sender: UIButton) {
+    @IBAction func btnNumbersUpInside(_ sender: UIButton) {
         sender.backgroundColor = UIColor.clear
+        let button = sender as UIButton
+        resultLabel.text = button.titleLabel!.text
     }
     
-    @IBAction func btn2UpInside(_ sender: UIButton) {
+    @IBAction func btnOperatorsUpInside(_ sender: UIButton) {
         sender.backgroundColor = UIColor.clear
+        let button = sender as UIButton
+        resultLabel.text = button.titleLabel!.text
     }
     
-    @IBAction func btn3UpInside(_ sender: UIButton) {
-        sender.backgroundColor = UIColor.clear
-    }
     
-    @IBAction func btn4UpInside(_ sender: UIButton) {
+    @IBAction func btnSpecialUpInside(_ sender: UIButton) {
         sender.backgroundColor = UIColor.clear
-    }
-    
-    @IBAction func btn5UpInside(_ sender: UIButton) {
-        sender.backgroundColor = UIColor.clear
-    }
-    
-    @IBAction func btn6UpInside(_ sender: UIButton) {
-        sender.backgroundColor = UIColor.clear
-    }
-    
-    @IBAction func btn7UpInside(_ sender: UIButton) {
-        sender.backgroundColor = UIColor.clear
-    }
-    
-    @IBAction func btn8UpInside(_ sender: UIButton) {
-        sender.backgroundColor = UIColor.clear
-    }
-    
-    @IBAction func btn9UpInside(_ sender: UIButton) {
-        sender.backgroundColor = UIColor.clear
-    }
-    
-    @IBAction func btn0UpInside(_ sender: UIButton) {
-        sender.backgroundColor = UIColor.clear
-    }
-    
-    @IBAction func btnPlusUpInside(_ sender: UIButton) {
-        sender.backgroundColor = UIColor.clear
-    }
-    
-    @IBAction func btnMinusUpInside(_ sender: UIButton) {
-        sender.backgroundColor = UIColor.clear
-    }
-    
-    @IBAction func btnMultiplyUpInside(_ sender: UIButton) {
-        sender.backgroundColor = UIColor.clear
-    }
-    
-    @IBAction func btnDivideUpInside(_ sender: UIButton) {
-        sender.backgroundColor = UIColor.clear
-    }
-    
-    @IBAction func btnDecUpInside(_ sender: UIButton) {
-        sender.backgroundColor = UIColor.clear
-    }
-    
-    @IBAction func btnEqualUpInside(_ sender: UIButton) {
-        sender.backgroundColor = UIColor.clear
-    }
-    
-    @IBAction func btnClearUpInside(_ sender: UIButton) {
-        sender.backgroundColor = UIColor.clear
-    }
-    
-    @IBAction func btnBackUpInside(_ sender: UIButton) {
-        sender.backgroundColor = UIColor.clear
-    }
-    
-    @IBAction func btnPosNegUpInside(_ sender: UIButton) {
-        sender.backgroundColor = UIColor.clear
-    }
-    
-    @IBAction func btnPrecentUpInside(_ sender: UIButton) {
-        sender.backgroundColor = UIColor.clear
+        let button = sender as UIButton
+        if button.tag == 1000 {
+            //AC button
+            resultLabel.text = "0"
+        } else {
+            //Back button
+        }
     }
 }
 

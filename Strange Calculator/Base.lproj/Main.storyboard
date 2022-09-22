@@ -19,7 +19,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="S_Calc_background" translatesAutoresizingMaskIntoConstraints="NO" id="5PC-ru-Mum">
                                 <rect key="frame" x="-3" y="45" width="396" height="770"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20q-vr-1mB">
+                            <button opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20q-vr-1mB">
                                 <rect key="frame" x="28" y="541" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="K2b-Tj-Lza"/>
@@ -43,545 +43,12 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="btnClearUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fZo-5Q-yNS"/>
                                     <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="MYW-fr-qSp"/>
+                                    <action selector="btnSpecialUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wtt-WP-nBr"/>
                                     <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="XEz-GO-j9G"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AU1-g3-ywL">
-                                <rect key="frame" x="129" y="456" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="EhY-QZ-bAt"/>
-                                    <constraint firstAttribute="width" constant="60" id="WKF-aR-mae"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="+/-">
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="30"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="yQH-a9-1dE"/>
-                                    <action selector="btnPosNegUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QNs-M5-lbL"/>
-                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="FXQ-6D-Cw0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikJ-ei-iaV">
-                                <rect key="frame" x="190" y="427" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="L3E-uT-Ltp"/>
-                                    <constraint firstAttribute="height" constant="60" id="VXZ-PP-XPl"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="%">
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="30"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="1nX-gW-M5V"/>
-                                    <action selector="btnPrecentUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hvt-I4-RUS"/>
-                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="0P9-ba-MbV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b65-wU-vwl">
-                                <rect key="frame" x="300" y="664" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="QeN-6c-tLD"/>
-                                    <constraint firstAttribute="width" constant="40" id="YqI-3I-Khe"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="÷">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btnDivideUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="naB-YV-l4p"/>
-                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="ZGF-ny-sBx"/>
-                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="0cq-yV-rZV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jtq-p5-ine">
-                                <rect key="frame" x="261.66666666666669" y="698" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="S0S-ia-pS8"/>
-                                    <constraint firstAttribute="width" constant="40" id="raI-35-lQH"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="x">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="Wc1-KA-GUk"/>
-                                    <action selector="btnMultiplyUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KOM-iF-g45"/>
-                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="ys8-Mc-1Mn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zG-FM-hfa">
-                                <rect key="frame" x="235" y="731" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="AFd-CG-Du7"/>
-                                    <constraint firstAttribute="height" constant="40" id="OF8-sM-bH4"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="-">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="ghm-bz-jze"/>
-                                    <action selector="btnMinusUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fKR-uR-rEt"/>
-                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="doZ-2i-eSH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvN-7g-9uW">
-                                <rect key="frame" x="216" y="770" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="3uB-yR-7Ub"/>
-                                    <constraint firstAttribute="height" constant="40" id="qfS-Wd-JBg"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="+">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="2aI-hs-Kj1"/>
-                                    <action selector="btnPlusUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oT2-14-pPv"/>
-                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="rij-uY-ThR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhi-2L-602">
-                                <rect key="frame" x="325.66666666666669" y="745" width="57.333333333333314" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="57.333333333333314" id="1HI-4g-XcJ"/>
-                                    <constraint firstAttribute="height" constant="60" id="bqg-Yj-IDw"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="=">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="30"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="gyv-jN-AFa"/>
-                                    <action selector="btnEqualUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qn5-3x-8NL"/>
-                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="kcE-sP-OPM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wqy-8i-ILh">
-                                <rect key="frame" x="325.66666666666669" y="567" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="XjW-dp-4CS"/>
-                                    <constraint firstAttribute="width" constant="60" id="n6k-d7-sGR"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="0">
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="30"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btn0UpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wW6-np-AFT"/>
-                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="trh-mH-amh"/>
-                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="Zn8-zD-4Sd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qd-Gw-Yb9">
-                                <rect key="frame" x="249.66666666666663" y="586" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="FKI-bV-TSY"/>
-                                    <constraint firstAttribute="width" constant="60" id="I1P-9a-N7f"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="9">
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="30"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btn9UpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3nC-Dx-86N"/>
-                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="e7o-5b-CfO"/>
-                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="jvx-hI-Kgl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEs-80-oJb">
-                                <rect key="frame" x="178" y="629" width="62.666666666666657" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="62.666666666666657" id="j3A-k5-6t3"/>
-                                    <constraint firstAttribute="height" constant="60" id="jck-hv-i6k"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="8">
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="30"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btn8UpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dm5-A5-QvB"/>
-                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="N6Q-d9-v3W"/>
-                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="5fK-0U-aR6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGc-VC-A1Q">
-                                <rect key="frame" x="141" y="689" width="62.666666666666657" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="W6W-gm-o6o"/>
-                                    <constraint firstAttribute="width" constant="62.666666666666657" id="oHF-X0-RtX"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="7">
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="30"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btn7UpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qJZ-8r-u57"/>
-                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="ghh-lW-9HG"/>
-                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="Qcs-t8-PZU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bv-si-NIJ">
-                                <rect key="frame" x="129" y="750" width="53" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="gA0-BT-Wys"/>
-                                    <constraint firstAttribute="width" constant="53" id="nqg-td-Va5"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="6">
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="30"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btn6UpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fU5-oX-EvL"/>
-                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="fa3-eD-SPe"/>
-                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="XLb-om-kOV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiG-gY-dZg">
-                                <rect key="frame" x="300" y="484" width="67" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="1aR-Fu-dOG"/>
-                                    <constraint firstAttribute="width" constant="67" id="Gb7-6B-ZiC"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="5">
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="30"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btn5UpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QdW-tP-2If"/>
-                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="CbK-Xl-wev"/>
-                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="S60-Sk-eeX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxD-Ko-49e">
-                                <rect key="frame" x="203" y="518" width="53" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="aTc-Q5-u69"/>
-                                    <constraint firstAttribute="width" constant="53" id="lJv-8N-dqU"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="4">
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="30"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btn4UpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Qa-nY-lxM"/>
-                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="C7Y-5y-Krc"/>
-                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="OsT-xG-Z9L"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYL-tS-IGC">
-                                <rect key="frame" x="119" y="579" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="wgc-D7-hzy"/>
-                                    <constraint firstAttribute="height" constant="60" id="xD9-Lg-BA7"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="3">
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="30"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btn3UpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sCT-uF-DXY"/>
-                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="dZh-Aa-iPo"/>
-                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="DtR-9l-xdF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEr-FP-M0P">
-                                <rect key="frame" x="62" y="664" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="IoA-I8-pev"/>
-                                    <constraint firstAttribute="width" constant="60" id="Qcx-Nt-Q2F"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="2">
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="30"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btn2UpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Nl-3Z-Vcd"/>
-                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="DZv-qg-FBe"/>
-                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="nrS-bS-09y"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Au0-jr-RqG">
-                                <rect key="frame" x="39" y="745" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="ajT-ZU-3OC"/>
-                                    <constraint firstAttribute="width" constant="60" id="xT2-1E-3VR"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="1">
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="30"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btn1UpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LoB-FI-wpG"/>
-                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="hPK-V4-y3t"/>
-                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="6Mc-kA-JlL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmI-oy-PNj">
-                                <rect key="frame" x="350" y="647" width="40" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="NJH-cd-H43"/>
-                                    <constraint firstAttribute="height" constant="42" id="mEU-bm-dt2"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content=".">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btnDecUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SJ7-E5-eZ3"/>
-                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="HsP-e9-99m"/>
-                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="SgH-Rn-0D7"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4eL-tP-0VY">
+                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4eL-tP-0VY">
                                 <rect key="frame" x="75" y="498" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="80x-Gm-YIq"/>
@@ -611,29 +78,556 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="btnBackUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ptK-SU-WBA"/>
                                     <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="E2m-Iw-hjY"/>
+                                    <action selector="btnSpecialUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jqf-Yx-mn7"/>
                                     <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="8k0-aD-QUI"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWL-Gg-oTa">
-                                <rect key="frame" x="16" y="60" width="358" height="301"/>
-                                <color key="backgroundColor" systemColor="systemTealColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                            <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AU1-g3-ywL">
+                                <rect key="frame" x="129" y="456" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="EhY-QZ-bAt"/>
+                                    <constraint firstAttribute="width" constant="60" id="WKF-aR-mae"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="+/-">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="yQH-a9-1dE"/>
+                                    <action selector="btnOperatorsUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BjH-ku-ddI"/>
+                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="FXQ-6D-Cw0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikJ-ei-iaV">
+                                <rect key="frame" x="190" y="427" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="L3E-uT-Ltp"/>
+                                    <constraint firstAttribute="height" constant="60" id="VXZ-PP-XPl"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="%">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="1nX-gW-M5V"/>
+                                    <action selector="btnOperatorsUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p2Z-P2-Cbb"/>
+                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="0P9-ba-MbV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b65-wU-vwl">
+                                <rect key="frame" x="300" y="664" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QeN-6c-tLD"/>
+                                    <constraint firstAttribute="width" constant="40" id="YqI-3I-Khe"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="÷">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
-                            </label>
+                                <connections>
+                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="ZGF-ny-sBx"/>
+                                    <action selector="btnOperatorsUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RP2-VJ-cOF"/>
+                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="0cq-yV-rZV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jtq-p5-ine">
+                                <rect key="frame" x="261.66666666666669" y="698" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="S0S-ia-pS8"/>
+                                    <constraint firstAttribute="width" constant="40" id="raI-35-lQH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="x">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="Wc1-KA-GUk"/>
+                                    <action selector="btnOperatorsUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IwV-cg-kU8"/>
+                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="ys8-Mc-1Mn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zG-FM-hfa">
+                                <rect key="frame" x="235" y="731" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="AFd-CG-Du7"/>
+                                    <constraint firstAttribute="height" constant="40" id="OF8-sM-bH4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="-">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="ghm-bz-jze"/>
+                                    <action selector="btnOperatorsUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5P0-Tx-BRl"/>
+                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="doZ-2i-eSH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvN-7g-9uW">
+                                <rect key="frame" x="216" y="770" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="3uB-yR-7Ub"/>
+                                    <constraint firstAttribute="height" constant="40" id="qfS-Wd-JBg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="+">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="2aI-hs-Kj1"/>
+                                    <action selector="btnOperatorsUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c3h-dB-gnR"/>
+                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="rij-uY-ThR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhi-2L-602">
+                                <rect key="frame" x="325.66666666666669" y="745" width="57.333333333333314" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57.333333333333314" id="1HI-4g-XcJ"/>
+                                    <constraint firstAttribute="height" constant="60" id="bqg-Yj-IDw"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="=">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="gyv-jN-AFa"/>
+                                    <action selector="btnOperatorsUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OSb-tm-i48"/>
+                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="kcE-sP-OPM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wqy-8i-ILh">
+                                <rect key="frame" x="325.66666666666669" y="567" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="XjW-dp-4CS"/>
+                                    <constraint firstAttribute="width" constant="60" id="n6k-d7-sGR"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="0">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="trh-mH-amh"/>
+                                    <action selector="btnNumbersUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SCl-5W-4ue"/>
+                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="Zn8-zD-4Sd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qd-Gw-Yb9">
+                                <rect key="frame" x="249.66666666666663" y="586" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="FKI-bV-TSY"/>
+                                    <constraint firstAttribute="width" constant="60" id="I1P-9a-N7f"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="9">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="e7o-5b-CfO"/>
+                                    <action selector="btnNumbersUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yAP-CO-ver"/>
+                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="jvx-hI-Kgl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEs-80-oJb">
+                                <rect key="frame" x="178" y="629" width="62.666666666666657" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62.666666666666657" id="j3A-k5-6t3"/>
+                                    <constraint firstAttribute="height" constant="60" id="jck-hv-i6k"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="8">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="N6Q-d9-v3W"/>
+                                    <action selector="btnNumbersUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1X4-HP-O3x"/>
+                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="5fK-0U-aR6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGc-VC-A1Q">
+                                <rect key="frame" x="141" y="689" width="62.666666666666657" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="W6W-gm-o6o"/>
+                                    <constraint firstAttribute="width" constant="62.666666666666657" id="oHF-X0-RtX"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="7">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="ghh-lW-9HG"/>
+                                    <action selector="btnNumbersUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9uQ-ss-XHY"/>
+                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="Qcs-t8-PZU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bv-si-NIJ">
+                                <rect key="frame" x="129" y="750" width="53" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="gA0-BT-Wys"/>
+                                    <constraint firstAttribute="width" constant="53" id="nqg-td-Va5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="6">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="fa3-eD-SPe"/>
+                                    <action selector="btnNumbersUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jUM-oY-tdS"/>
+                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="XLb-om-kOV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiG-gY-dZg">
+                                <rect key="frame" x="300" y="484" width="67" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1aR-Fu-dOG"/>
+                                    <constraint firstAttribute="width" constant="67" id="Gb7-6B-ZiC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="5">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="CbK-Xl-wev"/>
+                                    <action selector="btnNumbersUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vkV-he-IzQ"/>
+                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="S60-Sk-eeX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxD-Ko-49e">
+                                <rect key="frame" x="203" y="518" width="53" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="aTc-Q5-u69"/>
+                                    <constraint firstAttribute="width" constant="53" id="lJv-8N-dqU"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="4">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="C7Y-5y-Krc"/>
+                                    <action selector="btnNumbersUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IGd-Wq-W25"/>
+                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="OsT-xG-Z9L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYL-tS-IGC">
+                                <rect key="frame" x="119" y="579" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="wgc-D7-hzy"/>
+                                    <constraint firstAttribute="height" constant="60" id="xD9-Lg-BA7"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="3">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="dZh-Aa-iPo"/>
+                                    <action selector="btnNumbersUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HFN-Wt-tZy"/>
+                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="DtR-9l-xdF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEr-FP-M0P">
+                                <rect key="frame" x="62" y="664" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="IoA-I8-pev"/>
+                                    <constraint firstAttribute="width" constant="60" id="Qcx-Nt-Q2F"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="2">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="DZv-qg-FBe"/>
+                                    <action selector="btnNumbersUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L9K-uo-WJ2"/>
+                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="nrS-bS-09y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Au0-jr-RqG">
+                                <rect key="frame" x="39" y="745" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ajT-ZU-3OC"/>
+                                    <constraint firstAttribute="width" constant="60" id="xT2-1E-3VR"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="1">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="hPK-V4-y3t"/>
+                                    <action selector="btnNumbersUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bQj-lg-axi"/>
+                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="6Mc-kA-JlL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmI-oy-PNj">
+                                <rect key="frame" x="350" y="647" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="NJH-cd-H43"/>
+                                    <constraint firstAttribute="height" constant="40" id="mEU-bm-dt2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=".">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="36" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnDown:" destination="BYZ-38-t0r" eventType="touchDown" id="HsP-e9-99m"/>
+                                    <action selector="btnNumbersUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZOe-zD-NkH"/>
+                                    <action selector="btnUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="SgH-Rn-0D7"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OkF-Eh-Nlr">
+                                <rect key="frame" x="16" y="60" width="358" height="301"/>
+                                <color key="backgroundColor" red="0.99885290859999998" green="0.8596545458" blue="0.50966590639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gU9-hk-37o">
                                 <rect key="frame" x="39" y="79" width="316" height="219"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="219" id="WJA-Nu-Odf"/>
-                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Steps output">
                                         <attributes>
@@ -646,7 +640,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fol-1P-5Ew">
-                                <rect key="frame" x="37" y="306" width="316" height="38"/>
+                                <rect key="frame" x="37" y="306" width="318" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="0HX-ir-pAM"/>
+                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Result output">
                                         <attributes>
@@ -663,21 +660,23 @@
                         <constraints>
                             <constraint firstItem="7zG-FM-hfa" firstAttribute="top" secondItem="5PC-ru-Mum" secondAttribute="bottom" constant="-84" id="2mD-S7-p6z"/>
                             <constraint firstItem="5PC-ru-Mum" firstAttribute="leading" secondItem="AU1-g3-ywL" secondAttribute="trailing" constant="-192" id="3Fq-hH-5Uv"/>
-                            <constraint firstItem="gU9-hk-37o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="3Pi-hy-14D"/>
                             <constraint firstItem="5PC-ru-Mum" firstAttribute="leading" secondItem="VGc-VC-A1Q" secondAttribute="trailing" constant="-206.66666666666666" id="3Q0-6M-s7D"/>
+                            <constraint firstItem="gU9-hk-37o" firstAttribute="leading" secondItem="Au0-jr-RqG" secondAttribute="leading" id="3yz-pm-sYY"/>
+                            <constraint firstItem="OkF-Eh-Nlr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5q5-5p-KbQ"/>
                             <constraint firstItem="Jtq-p5-ine" firstAttribute="leading" secondItem="5PC-ru-Mum" secondAttribute="trailing" constant="-131.33333333333331" id="8Q9-W2-4uV"/>
-                            <constraint firstItem="ikJ-ei-iaV" firstAttribute="top" secondItem="aWL-Gg-oTa" secondAttribute="bottom" constant="66" id="9F1-be-Jqy"/>
-                            <constraint firstItem="aWL-Gg-oTa" firstAttribute="centerX" secondItem="5PC-ru-Mum" secondAttribute="centerX" id="9zP-wH-WRu"/>
                             <constraint firstItem="7Qd-Gw-Yb9" firstAttribute="leading" secondItem="5PC-ru-Mum" secondAttribute="trailing" constant="-143.33333333333337" id="ADf-3K-IGW"/>
+                            <constraint firstItem="Fol-1P-5Ew" firstAttribute="top" secondItem="gU9-hk-37o" secondAttribute="bottom" constant="8" id="Auq-HW-9je"/>
                             <constraint firstItem="RxD-Ko-49e" firstAttribute="top" secondItem="5PC-ru-Mum" secondAttribute="bottom" constant="-297" id="Ayg-5k-SP1"/>
                             <constraint firstItem="fEs-80-oJb" firstAttribute="top" secondItem="5PC-ru-Mum" secondAttribute="bottom" constant="-186" id="Bgu-Ju-SyN"/>
                             <constraint firstItem="RxD-Ko-49e" firstAttribute="leading" secondItem="5PC-ru-Mum" secondAttribute="trailing" constant="-190" id="Ez3-rK-jU0"/>
                             <constraint firstItem="b65-wU-vwl" firstAttribute="top" secondItem="5PC-ru-Mum" secondAttribute="bottom" constant="-151" id="FIH-4g-uCG"/>
+                            <constraint firstItem="OkF-Eh-Nlr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="G1x-Xb-6u4"/>
                             <constraint firstItem="5PC-ru-Mum" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-2" id="GLf-gj-bJY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gU9-hk-37o" secondAttribute="trailing" constant="35" id="Gnf-vX-wdf"/>
                             <constraint firstItem="7Qd-Gw-Yb9" firstAttribute="top" secondItem="5PC-ru-Mum" secondAttribute="bottom" constant="-229" id="HKg-mz-UF8"/>
                             <constraint firstItem="VmI-oy-PNj" firstAttribute="top" secondItem="5PC-ru-Mum" secondAttribute="bottom" constant="-168" id="Hap-mT-Mxb"/>
+                            <constraint firstItem="ikJ-ei-iaV" firstAttribute="top" secondItem="Fol-1P-5Ew" secondAttribute="bottom" constant="83" id="JAz-SU-BZ8"/>
                             <constraint firstItem="7zG-FM-hfa" firstAttribute="leading" secondItem="5PC-ru-Mum" secondAttribute="trailing" constant="-158" id="JJU-Ab-Tnm"/>
-                            <constraint firstItem="aWL-Gg-oTa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="JrT-M4-3bI"/>
                             <constraint firstItem="xYL-tS-IGC" firstAttribute="top" secondItem="5PC-ru-Mum" secondAttribute="bottom" constant="-236" id="Kzo-hO-Pq4"/>
                             <constraint firstItem="b65-wU-vwl" firstAttribute="leading" secondItem="5PC-ru-Mum" secondAttribute="trailing" constant="-93" id="Lpj-1u-ZkK"/>
                             <constraint firstItem="ikJ-ei-iaV" firstAttribute="leading" secondItem="5PC-ru-Mum" secondAttribute="trailing" constant="-203" id="NRj-Jt-0EL"/>
@@ -685,16 +684,15 @@
                             <constraint firstItem="iiG-gY-dZg" firstAttribute="leading" secondItem="5PC-ru-Mum" secondAttribute="trailing" constant="-93" id="PBQ-Lh-6u6"/>
                             <constraint firstItem="5PC-ru-Mum" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SZN-Ny-fWl"/>
                             <constraint firstItem="bhi-2L-602" firstAttribute="leading" secondItem="5PC-ru-Mum" secondAttribute="trailing" constant="-67.333333333333258" id="SbT-dO-UhG"/>
-                            <constraint firstItem="Fol-1P-5Ew" firstAttribute="top" secondItem="gU9-hk-37o" secondAttribute="bottom" constant="8" id="UV8-y6-IVa"/>
+                            <constraint firstItem="gU9-hk-37o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="WAx-t0-2yA"/>
                             <constraint firstItem="6bv-si-NIJ" firstAttribute="top" secondItem="5PC-ru-Mum" secondAttribute="bottom" constant="-65" id="X2x-tJ-Dns"/>
                             <constraint firstItem="Wqy-8i-ILh" firstAttribute="top" secondItem="5PC-ru-Mum" secondAttribute="bottom" constant="-248" id="Zk6-f7-7xJ"/>
                             <constraint firstAttribute="bottomMargin" secondItem="5PC-ru-Mum" secondAttribute="bottom" constant="-5" id="aQA-jv-Sew"/>
                             <constraint firstItem="VGc-VC-A1Q" firstAttribute="top" secondItem="5PC-ru-Mum" secondAttribute="bottom" constant="-126" id="agO-1W-c4g"/>
                             <constraint firstItem="5PC-ru-Mum" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-19" id="aqX-iW-Ch6"/>
                             <constraint firstItem="Jtq-p5-ine" firstAttribute="top" secondItem="5PC-ru-Mum" secondAttribute="bottom" constant="-117" id="cBp-It-huH"/>
-                            <constraint firstItem="gU9-hk-37o" firstAttribute="leading" secondItem="Au0-jr-RqG" secondAttribute="leading" id="dRN-G7-CTj"/>
+                            <constraint firstItem="OkF-Eh-Nlr" firstAttribute="centerX" secondItem="5PC-ru-Mum" secondAttribute="centerX" id="dOa-cC-ZGY"/>
                             <constraint firstItem="Wqy-8i-ILh" firstAttribute="leading" secondItem="5PC-ru-Mum" secondAttribute="trailing" constant="-67.333333333333314" id="eB0-Pn-pck"/>
-                            <constraint firstItem="aWL-Gg-oTa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="g5A-2S-vOU"/>
                             <constraint firstItem="5PC-ru-Mum" firstAttribute="leading" secondItem="6bv-si-NIJ" secondAttribute="trailing" constant="-185" id="h1b-P6-bj6"/>
                             <constraint firstItem="NEr-FP-M0P" firstAttribute="top" secondItem="5PC-ru-Mum" secondAttribute="bottom" constant="-151" id="h2P-rx-LSM"/>
                             <constraint firstItem="fEs-80-oJb" firstAttribute="leading" secondItem="5PC-ru-Mum" secondAttribute="trailing" constant="-215" id="h7t-gg-IO4"/>
@@ -709,15 +707,17 @@
                             <constraint firstItem="Au0-jr-RqG" firstAttribute="top" secondItem="5PC-ru-Mum" secondAttribute="bottom" constant="-70" id="ps4-HC-hKw"/>
                             <constraint firstItem="5PC-ru-Mum" firstAttribute="leading" secondItem="NEr-FP-M0P" secondAttribute="trailing" constant="-125" id="r1m-vJ-eEX"/>
                             <constraint firstItem="bhi-2L-602" firstAttribute="top" secondItem="5PC-ru-Mum" secondAttribute="bottom" constant="-70" id="rbD-4j-lKV"/>
-                            <constraint firstItem="Fol-1P-5Ew" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="rmf-Pv-g4x"/>
-                            <constraint firstItem="ikJ-ei-iaV" firstAttribute="top" secondItem="Fol-1P-5Ew" secondAttribute="bottom" constant="83" id="sa5-Yb-M9Z"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gU9-hk-37o" secondAttribute="trailing" constant="35" id="uJw-rw-cFH"/>
+                            <constraint firstItem="ikJ-ei-iaV" firstAttribute="top" secondItem="OkF-Eh-Nlr" secondAttribute="bottom" constant="66" id="ugQ-Ab-qzh"/>
+                            <constraint firstItem="gU9-hk-37o" firstAttribute="trailing" secondItem="Fol-1P-5Ew" secondAttribute="trailing" id="v9b-XE-Ru5"/>
                             <constraint firstItem="5PC-ru-Mum" firstAttribute="leading" secondItem="4eL-tP-0VY" secondAttribute="trailing" constant="-138" id="xDw-ZP-XLX"/>
-                            <constraint firstItem="Fol-1P-5Ew" firstAttribute="centerX" secondItem="aWL-Gg-oTa" secondAttribute="centerX" id="yka-Ey-mS2"/>
                             <constraint firstItem="ikJ-ei-iaV" firstAttribute="top" secondItem="5PC-ru-Mum" secondAttribute="bottom" constant="-388" id="z5h-om-vF2"/>
                             <constraint firstItem="20q-vr-1mB" firstAttribute="top" secondItem="5PC-ru-Mum" secondAttribute="bottom" constant="-274" id="zMQ-ab-Jza"/>
+                            <constraint firstItem="Fol-1P-5Ew" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="zbi-v2-HQN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="Fol-1P-5Ew" id="jkD-Rt-f6w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -728,9 +728,6 @@
         <image name="S_Calc_background" width="436" height="934"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
