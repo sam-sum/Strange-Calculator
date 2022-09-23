@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0682879D28DE11D500266830 /* LeftHandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0682879C28DE11D500266830 /* LeftHandViewController.swift */; };
 		06FDFFC828D91C76008157A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FDFFC728D91C76008157A1 /* AppDelegate.swift */; };
 		06FDFFCA28D91C76008157A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FDFFC928D91C76008157A1 /* SceneDelegate.swift */; };
 		06FDFFCC28D91C76008157A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FDFFCB28D91C76008157A1 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0682879C28DE11D500266830 /* LeftHandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftHandViewController.swift; sourceTree = "<group>"; };
 		06FDFFC428D91C76008157A1 /* Strange Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Strange Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06FDFFC728D91C76008157A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06FDFFC928D91C76008157A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				06FDFFC728D91C76008157A1 /* AppDelegate.swift */,
 				06FDFFC928D91C76008157A1 /* SceneDelegate.swift */,
 				06FDFFCB28D91C76008157A1 /* ViewController.swift */,
+				0682879C28DE11D500266830 /* LeftHandViewController.swift */,
 				06FDFFCD28D91C76008157A1 /* Main.storyboard */,
 				06FDFFD028D91C77008157A1 /* Assets.xcassets */,
 				06FDFFD228D91C77008157A1 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0682879D28DE11D500266830 /* LeftHandViewController.swift in Sources */,
 				06FDFFCC28D91C76008157A1 /* ViewController.swift in Sources */,
 				06FDFFC828D91C76008157A1 /* AppDelegate.swift in Sources */,
 				06FDFFCA28D91C76008157A1 /* SceneDelegate.swift in Sources */,
