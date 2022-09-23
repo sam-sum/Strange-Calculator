@@ -9,7 +9,7 @@
 //
 //  ViewController.swift
 //  Strange Calculator - A simple calculator with a strange key layout
-//  Version 0.1
+//  Version 0.2
 //
 
 import UIKit
